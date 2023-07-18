@@ -37,12 +37,12 @@
 <meta property="og:image:width" content="692">
 <meta property="og:image:height" content="692">
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
 integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
 crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-crossorigin=""></script>
+crossorigin=""></script> -->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -134,16 +134,16 @@ crossorigin=""></script>
                            </ul>
                         </li> -->
                         <li>
-                            <a class="scrollings" href="/">Home</a>
+                            <a class="scrollings literal" id="navbar-nav-home" href="/">Home</a>
                         </li>
                         <li>
-                           <a class="scrollings" href="#about">About</a>
+                           <a class="scrollings literal" id="navbar-nav-about" href="#about">About</a>
                         </li>
                         <li>
-                            <a class="scrollings" href="#photo">Photos</a>
+                            <a class="scrollings literal" id="navbar-nav-photos" href="#photo">Photos</a>
                         </li>
                         <li>
-                           <a href="#prices" class="scrollings">Prices</a>
+                           <a href="#prices" class="scrollings literal" id="navbar-nav-prices">Prices</a>
                         </li>
                         <!-- <li>
                            <a href="#ourinfo" class="scrollings">Blog</a>
@@ -194,10 +194,17 @@ crossorigin=""></script>
                            </ul>
                         </li> -->
                         <li>
-                           <a href="#contact-form" class="scrollings">Contact Us</a>
+                           <a href="#contact-form" class="scrollings literal" id="navbar-nav-contact-us">Contact Us</a>
                         </li>
                         <li>
-                            <ul class="social white wow bounceIn top10">
+                            <a class="scrollings">[</a> 
+                            <a href="/" class="scrollings" id="navbar-nav-language-en">English</a> 
+                            <a class="scrollings">|</label> 
+                            <a href="ja.html" class="scrollings" id="navbar-nav-language-ja">日本語</a>
+                            <a class="scrollings">]</a>
+                        </li>
+                        <li>
+                            <ul class="social white wow bounceIn top10 scrollings">
                                 <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
                                 <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
                                 <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
@@ -230,7 +237,7 @@ crossorigin=""></script>
                    data-width="['none','none','none','360']" data-type="text"
                    data-textalign="['center','center','center','center']"
                    data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" >
-                    <h2 class="text-capitalize whitecolor">
+                    <h2 class="text-capitalize whitecolor literal" id="banner-main-1">
                     High Ceiling Gallery Space <span class="block"> on 60th Street, Manhattan </span>
                     </h2>
                 </div>
@@ -238,7 +245,7 @@ crossorigin=""></script>
                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                    data-y="['middle','middle','middle','middle']" data-voffset="['40','40','40','40']"  
                    data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="s:900;e:Power2.easeInOut;s:900;e:Power2.easeInOut;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                    <a href="#about" class="button default scrollings">See More</a> &nbsp; <a href="#contactus" class="button whitehole">Inquiry</a>
+                    <a href="#about" class="button default scrollings literal" id="banner-main-see-more">See More</a> &nbsp; <a href="#contactus" class="button whitehole literal" id="banner-main-inquiry">Inquiry</a>
                 </div>
             </li>
             <!-- SLIDE 2  -->
@@ -253,7 +260,7 @@ crossorigin=""></script>
                    data-width="['none','none','none','360']" data-type="text"
                    data-textalign="['center','center','center','center']"
                    data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" >
-                    <h2 class="text-capitalize whitecolor">
+                    <h2 class="text-capitalize whitecolor literal" id="banner-main-2">
                     12 ft ceiling & 635 SQ FT ( 59 SQ METERS ) <span class="block"> Fully-transformable space  </span>
                     </h2>
                 </div>
@@ -261,8 +268,7 @@ crossorigin=""></script>
                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                    data-y="['middle','middle','middle','middle']" data-voffset="['40','40','40','40']"  
                    data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="s:900;e:Power2.easeInOut;s:900;e:Power2.easeInOut;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                   <a href="#about" class="button default scrollings">See More</a> &nbsp; <a href="#contactus" class="button whitehole">Inquiry</a>
-                </div>
+                   <a href="#about" class="button default scrollings literal" id="banner-main-see-more">See More</a> &nbsp; <a href="#contactus" class="button whitehole literal" id="banner-main-inquiry">Inquiry</a>                </div>
             </li>
             <!-- SLIDE 3  -->
             <li data-index="rs-19" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500">
@@ -277,7 +283,7 @@ crossorigin=""></script>
                    data-width="['none','none','none','360']" data-type="text"
                    data-textalign="['center','center','center','center']"
                    data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" >
-                    <h2 class="text-capitalize whitecolor">
+                    <h2 class="text-capitalize whitecolor literal" id="banner-main-3">
                     Experienced Sales Staff On-Site <span class="block">10AM-5PM</span>
                     </h2>
                 </div>
@@ -285,8 +291,7 @@ crossorigin=""></script>
                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                    data-y="['middle','middle','middle','middle']" data-voffset="['40','40','40','40']"  
                    data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="s:900;e:Power2.easeInOut;s:900;e:Power2.easeInOut;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                   <a href="#about" class="button default scrollings">See More</a> &nbsp; <a href="#contactus" class="button whitehole">Inquiry</a>
-                </div>
+                   <a href="#about" class="button default scrollings literal" id="banner-main-see-more">See More</a> &nbsp; <a href="#contactus" class="button whitehole literal" id="banner-main-inquiry">Inquiry</a>                </div>
             </li>
         </ul>
     </div>
@@ -353,8 +358,8 @@ crossorigin=""></script>
             <div class="col-md-8 col-sm-10">
                 <div class="intro-text center bottom15 wow fadeInUp">
                     <img src="images/logo-circle-cropped.png" width="50%" alt="logo" class="logo">
-                    <h2 class="darkcolor bottom45">Gallery helping your projects gain more momentum.</h2>
-                    <p class="bottom45">Welcome to our exquisite gallery space for rent, nestled in the heart of Manhattan's vibrant 60th Street. Located on the second floor, our gallery offers a serene and inviting atmosphere for art enthusiasts. As you step inside, you'll be greeted by a flood of natural light pouring through the expansive windows, providing a stunning view of the bustling street below. Our gallery specializes in showcasing the captivating artwork of talented artists, offering a unique blend of traditional and contemporary aesthetics. </p>
+                    <h2 class="darkcolor bottom45 literal" id="about-heading">Gallery helping your projects gain more momentum.</h2>
+                    <p class="bottom45 literal" id="about-summary">Welcome to our exquisite gallery space for rent, nestled in the heart of Manhattan's vibrant 60th Street. Located on the second floor, our gallery offers a serene and inviting atmosphere for art enthusiasts. As you step inside, you'll be greeted by a flood of natural light pouring through the expansive windows, providing a stunning view of the bustling street below. Our gallery specializes in showcasing the captivating artwork of talented artists, offering a unique blend of traditional and contemporary aesthetics. </p>
                     <!-- <a href="#ourpricing" class="button default">choose your best</a> -->
                 </div>
             </div>
@@ -365,8 +370,8 @@ crossorigin=""></script>
                 <div class="floated-service equalheight top60 wow fadeInUp">
                     <i class="fa fa-star"></i>
                     <div class="cell">
-                        <h4 class="darkcolor bottom10"><strong>Maximize</strong> your artwork exposure</h4>
-                        <p class="bottom25">Gallery owner / manager / staff members are on-site 10am - 5pm. With a dedicated sales representative at hand, artists have the opportunity to have their artworks not only exhibited but also sold directly to interested patrons. Our knowledgeable staff is equipped to provide guidance and support throughout the selling process, ensuring that each artwork finds its rightful place in the hearts and homes of appreciative collectors. </p>
+                        <h4 class="darkcolor bottom10 literal" id="about-maximize"><strong>Maximize</strong> your artwork exposure</h4>
+                        <p class="bottom25 literal" id="about-maximize-details">Gallery owner / manager / staff members are on-site 10am - 5pm. With a dedicated sales representative at hand, artists have the opportunity to have their artworks not only exhibited but also sold directly to interested patrons. Our knowledgeable staff is equipped to provide guidance and support throughout the selling process, ensuring that each artwork finds its rightful place in the hearts and homes of appreciative collectors. </p>
                         <!-- <a href="javascript:void(0)" class="underlined">read more</a> -->
                     </div>
                 </div>
@@ -375,8 +380,8 @@ crossorigin=""></script>
                 <div class="floated-service equalheight top60 wow fadeInUp">
                     <i class="fa fa-thumbs-up"></i>
                     <div class="cell">
-                        <h4 class="darkcolor bottom10"><strong>Endless</strong> layout possibilities</h4>
-                        <p class="bottom25">Fully-transformable space and 12 ft ceiling. 2 Rooms and 1 inventory storage. Whether you're an artist looking to exhibit your creations or an event organizer seeking an elegant venue, our gallery space is the perfect canvas to bring your vision to life. With its prime location and captivating ambiance, our gallery space offers an exceptional opportunity to immerse yourself in the rich tapestry of art and culture.</p>
+                        <h4 class="darkcolor bottom10 literal" id="about-endless"><strong>Endless</strong> layout possibilities</h4>
+                        <p class="bottom25 literal" id="about-endless-details">Fully-transformable space and 12 ft ceiling. 2 Rooms and 1 inventory storage. Whether you're an artist looking to exhibit your creations or an event organizer seeking an elegant venue, our gallery space is the perfect canvas to bring your vision to life. With its prime location and captivating ambiance, our gallery space offers an exceptional opportunity to immerse yourself in the rich tapestry of art and culture.</p>
                         <!-- <a href="javascript:void(0)" class="underlined">read more</a> -->
                     </div>
                 </div>
@@ -385,8 +390,8 @@ crossorigin=""></script>
                 <div class="floated-service equalheight top60 wow fadeInUp">
                     <i class="fa fa-eye"></i>
                     <div class="cell">
-                        <h4 class="darkcolor bottom10"><strong>Artist</strong> focused space</h4>
-                        <p class="bottom25">Nestled within a vibrant artistic hub, our gallery space is seamlessly connected to a stylish hair salon, offering a unique fusion of beauty and creativity. Step inside and be greeted by our friendly and knowledgeable staff, who are dedicated to welcoming visitors and showcasing the exquisite artworks on display. Our team is not only passionate about art but also well-versed in the stories and techniques behind each piece, ensuring a personalized and engaging experience for both artists and art enthusiasts.</p>
+                        <h4 class="darkcolor bottom10 literal" id="about-artist"><strong>Artist</strong> focused space</h4>
+                        <p class="bottom25 literal" id="about-artist-details">Nestled within a vibrant artistic hub, our gallery space is seamlessly connected to a stylish hair salon, offering a unique fusion of beauty and creativity. Step inside and be greeted by our friendly and knowledgeable staff, who are dedicated to welcoming visitors and showcasing the exquisite artworks on display. Our team is not only passionate about art but also well-versed in the stories and techniques behind each piece, ensuring a personalized and engaging experience for both artists and art enthusiasts.</p>
                         <!-- <a href="javascript:void(0)" class="underlined">read more</a> -->
                     </div>
                 </div>
@@ -655,7 +660,7 @@ crossorigin=""></script>
                         <p>(name)</p>
                     </div>
                 </div>
-                <!-- <div class="cbp-item">
+                <div class="cbp-item">
                     <div class="image">
                         <img alt="image" src="images/gallery-dynamic6.jpg">
                     </div>
@@ -719,18 +724,19 @@ crossorigin=""></script>
                         <h3 class="bottom20"><a data-fancybox="gallery" href="images/gallery-dynamic10.jpg">Camp-T Culture</a></h3>
                         <p>printing industry</p>
                     </div>
-                </div> -->
+                </div>
             </div>
-            <!-- <div id="gallery-work" class="cbp-l-loadMore-button">
+            <div id="gallery-work" class="cbp-l-loadMore-button">
                 <a href="load-more/loadmore-nospace.html" class="cbp-l-loadMore-link loadmore-dark container-padding float" rel="nofollow">
                     <span class="cbp-l-loadMore-defaultText">Load more projects ... <i class="fa fa-spinner"></i></span>
                     <span class="cbp-l-loadMore-loadingText">Loading...</span>
                     <span class="cbp-l-loadMore-noMoreLoading">No more items</span>
                 </a>
-            </div> -->
+            </div>
         </div>
     </div>
 </section> 
+-->
 <!--Gallery Grid ends-->
 
 
@@ -850,9 +856,9 @@ crossorigin=""></script>
             <div class="col-md-3 col-sm-2"> </div>
             <div class="col-md-6 col-sm-8">
                 <div class="intro-text center wow fadeInUp">
-                    <span class="heading-title bottom25">well thoughtout plans </span>
-                    <h2 class="darkcolor bottom45">Flexible Plans</h2>
-                    <p class="bottom25">Please contact us for more details</p>
+                    <span class="heading-title bottom25 literal" id="prices-heading">well thoughtout plans </span>
+                    <h2 class="darkcolor bottom45 literal" id="prices-title">Flexible Plans</h2>
+                    <p class="bottom25 literal" id="prices-details">Please contact us for more details</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-2"> </div>
@@ -863,47 +869,47 @@ crossorigin=""></script>
             <div class="row">
                 <div class="col-md-4 col-sm-4 price-table text-center top50 wow fadeInUp">
                     <div class="price-plan">
-                        <h3 class="bottom15">Weekend Pop-Up</h3>
-                        <div class="ammount">
+                        <h3 class="bottom15 literal" id="prices-1-title">Weekend Pop-Up</h3>
+                        <div class="ammount literal" id="prices-1-price">
                             <i class="fa fa-dollar"></i>
                             <h1>1200</h1> <span class="dur">/ 3 days</span>
                         </div>
                     </div>
-                    <ul class="top15">
+                    <ul class="top15 literal" id="prices-1-list">
                         <li><span>Friday, Saturday, and Sunday</span></li>
                         <li><span>Opening Reception & Refreshments</span></li>
                         <li><span>Instagram / Youtube Live Support</span></li>
                         <li><span>Email and SNS Marketing</span></li>
                     </ul>
                     <div class="clearfix"></div>
-                    <a href="javascript:void(0)" class="button defaulthole top50">Contact Us</a>
+                    <a href="javascript:void(0)" class="button defaulthole top50 literal" id="prices-1-contact">Contact Us</a>
                 </div>
                 <div class="col-md-4 col-sm-4 price-table active text-center top50 wow fadeInUp">
                     <div class="price-plan">
-                        <h3 class="bottom15">Weekly Plan</h3>
-                        <div class="ammount">
+                        <h3 class="bottom15 literal" id="prices-2-title">Weekly Plan</h3>
+                        <div class="ammount literal" id="prices-2-price">
                             <i class="fa fa-dollar"></i>
                             <h1>1500</h1> <span class="dur">/ week</span>
                         </div>
                     </div>
-                    <ul class="top15">
+                    <ul class="top15 literal" id="prices-2-list">
                         <li><span>Onsite Workshop or Event Opportunity</span></li>
                         <li><span>Instagram / Youtube Live Support</span></li>
                         <li><span>Online Shop Listing</span></li>
                         <li><span>Email and SNS Marketing</span></li>
                     </ul>
                     <div class="clearfix"></div>
-                    <a href="javascript:void(0)" class="button defaulthole top50">Contact Us</a>
+                    <a href="javascript:void(0)" class="button defaulthole top50 literal" id="prices-2-contact">Contact Us</a>
                 </div>
                 <div class="col-md-4 col-sm-4 price-table text-center top50 wow fadeInUp">
                     <div class="price-plan">
-                        <h3 class="bottom15">Monthly</h3>
-                        <div class="ammount">
+                        <h3 class="bottom15 literal" id="prices-3-title">Monthly</h3>
+                        <div class="ammount literal" id="prices-3-price">
                             <i class="fa fa-dollar"></i>
                             <h1>4500</h1> <span class="dur">/ month</span>
                         </div>
                     </div>
-                    <ul class="top15">
+                    <ul class="top15 literal" id="prices-3-list">
                         <li><span>Extra Storage Room</span></li>
                         <li><span>Onsite Workshop or Event Opportunity</span></li>
                         <li><span>Instagram / Youtube Live Support</span></li>
@@ -911,7 +917,7 @@ crossorigin=""></script>
                         <li><span>Email and SNS Marketing</span></li>
                     </ul>
                     <div class="clearfix"></div>
-                    <a href="#contact-form" class="button defaulthole top50">Contact Us</a>
+                    <a href="#contact-form" class="button defaulthole top50 literal" id="prices-3-contact">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -1058,11 +1064,7 @@ crossorigin=""></script>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-7">
-                <div class="intro-text wow fadeLeft">
-                    <!-- <span class="heading-title bottom25">
-                         Yatsuken Gallery
-                     </span>
-                     <h6 class="darkcolor">Yatsuken Gallery</h6> -->
+                <div class="intro-text wow fadeLeft literal" id="map-address">
                      <h2 class="darkcolor top25 bottom35"><span class="defaultcolor">Yatsuken Gallery</span></h2>
                      <p>Address: 208 E 60th St, New York, NY 10022</p>
                      <p>Phone: +1 212 752 9229</p>
@@ -1071,7 +1073,7 @@ crossorigin=""></script>
                 </div>
             </div>
             <div class="col-md-6 col-sm-5 wow fadeInRight">
-                <h3 class="top50 heading_space">Embrace the energy of 60th street Manhattan, where creativity flourishes and artistic passions thrive. Our inviting gallery space, with its strategic location and exceptional visibility, offers a remarkable opportunity to showcase your talent and captivate the hearts and minds of all who step through the door.</h3>
+                <h3 class="top50 heading_space literal" id="map-description">Embrace the energy of 60th street Manhattan, where creativity flourishes and artistic passions thrive. Our inviting gallery space, with its strategic location and exceptional visibility, offers a remarkable opportunity to showcase your talent and captivate the hearts and minds of all who step through the door.</h3>
             </div>
             <!-- <div class="col-md-12 col-sm-12 text-center"><a href="#contact-form" class="button default scrollings">explore </a></div> -->
         </div>
@@ -1130,8 +1132,8 @@ crossorigin=""></script>
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-sm-9 wow fadeInUp">
-                <h3 class="darkcolor text-uppercase bottom35">get in touch with <span class="defaultcolor">us </span></h3>
-                <p class="heading_space">Any questions? Feel free to contact us or visit our gallery</p>
+                <h3 class="darkcolor text-uppercase bottom35 literal" id="contact-heading">get in touch with <span class="defaultcolor">us </span></h3>
+                <p class="heading_space literal" id="contact-message">Any questions? Feel free to contact us or visit our gallery</p>
             </div>
         </div>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRXIvSDJQowFdmcx9eliDQ6E6tN3MpQil6o2gojU6ipme7Vg/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -1253,7 +1255,7 @@ crossorigin=""></script>
 <script src="js/functions.js"></script>
 
 <!-- My Functions -->
-<!-- <script src="js/custom.js"></script> -->
+<script src="js/custom.js"></script>
     
 <!--Leaflet map API-->
 

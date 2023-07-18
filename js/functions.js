@@ -7,6 +7,7 @@ jQuery(window).on("load", function () {
 
 jQuery(function ($) {
    "use strict";
+   //translateLiteral();
    var $window = $(window);
    var windowsize = $(window).width();
    var $root = $("html, body");
