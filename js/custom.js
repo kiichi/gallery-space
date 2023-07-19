@@ -3,16 +3,24 @@ function translateLiteral(){
 
     $('html').attr('lang','ja');
     var dict = {};
+    var missing = {};
     $(".literal").each(function(idx,item){
         console.log(idx,$(item).attr('id'));
         var id = $(item).attr('id');
         var content = item.innerHTML;
-        dict[id] = {'en':trans[id]['en'],'ja':trans[id]['ja']};
-        item.innerHTML = trans[id]['ja'];
+        if (trans[id]){
+            dict[id] = {'en':trans[id]['en'],'ja':trans[id]['ja']};
+            item.innerHTML = trans[id]['ja'];
+        }
+        else {
+            missing[id] = {'en':item.innerHTML,'ja':''};
+        }
     });
     //console.log(JSON.stringify(dict,2,2));
 
     console.log('<!DOCTYPE html><html lang="ja">'+$('html').html()+'</html>');
+    
+    console.error('ERROR ?: add missing ',JSON.stringify(missing,4,4));
 }
 
 function getTranslation(){
@@ -71,23 +79,23 @@ function getTranslation(){
         },
         "about-maximize-details": {
           "en": "Gallery owner / manager / staff members are on-site 10am - 5pm. With a dedicated sales representative at hand, artists have the opportunity to have their artworks not only exhibited but also sold directly to interested patrons. Our knowledgeable staff is equipped to provide guidance and support throughout the selling process, ensuring that each artwork finds its rightful place in the hearts and homes of appreciative collectors. ",
-          "ja": "ギャラリーのオーナー、マネージャー、スタッフは午前10時から午後5時まで現地にいます。専任の営業担当者が常駐しているため、アーティストは自分の作品を展示するだけでなく、興味を持ったパトロンに直接販売する機会も得られます。当ギャラリーの知識豊富なスタッフは、販売プロセス全体を通じてガイダンスとサポートを提供し、各作品が理想的なオーナーを見つけ、感謝の気持ちを持つコレクターの心と家庭に迎え入れられることを確実にします。 "
+          "ja": "ギャラリーのオーナー、マネージャー、スタッフは午前10時から午後5時まで現地にいます。専任の営業担当者が常駐しているため、アーティストは自分の作品を展示するだけでなく、興味を持ったパトロンに直接販売する機会も得られます。当ギャラリーの知識豊富なスタッフは、販売プロセス全体を通じてガイダンスとサポートを提供し、各作品が理想的なオーナーを見つけるよう尽力します。"
         },
         "about-endless": {
           "en": "<strong>Endless</strong> layout possibilities",
-          "ja": "柔軟な展示すぺーす"
+          "ja": "柔軟な展示スペース"
         },
         "about-endless-details": {
           "en": "Fully-transformable space and 12 ft ceiling. 2 Rooms and 1 inventory storage. Whether you're an artist looking to exhibit your creations or an event organizer seeking an elegant venue, our gallery space is the perfect canvas to bring your vision to life. With its prime location and captivating ambiance, our gallery space offers an exceptional opportunity to immerse yourself in the rich tapestry of art and culture.",
-          "ja": "自由にレイアウトを変えられるスペースと12フィートの天井高。2つの部屋と1つのストレージがあります。アーティストであれば自分の作品を展示する場所として、またイベントオーガナイザーであれば洗練された会場として、当ギャラリーのスペースはあなたの想像を現実に映すパーフェクトな舞台となります。その抜群の立地と心を引きつける空気感で、当ギャラリーのスペースは、芸術と文化の豊かな世界に身を投じる素晴らしいチャンスを提供します。"
+          "ja": "自由にレイアウトを変えられるスペースと12フィートの天井高。2つの部屋と1つのストレージがあります。アーティストであれば自分の作品を展示する場所として、またイベントオーガナイザーにとって洗練された会場として、当ギャラリーのスペースはあなたの想像を実現するパーフェクトな舞台となります。その抜群の立地と心を引きつけるマンハッタンにて、当ギャラリーのスペースは、芸術と文化の豊かな世界に身を投じる素晴らしいチャンスを提供します。"
         },
         "about-artist": {
           "en": "<strong>Artist</strong> focused space",
-          "ja": "アーティストをハイライトする"
+          "ja": "アーティストにスポットライトを"
         },
         "about-artist-details": {
           "en": "Nestled within a vibrant artistic hub, our gallery space is seamlessly connected to a stylish hair salon, offering a unique fusion of beauty and creativity. Step inside and be greeted by our friendly and knowledgeable staff, who are dedicated to welcoming visitors and showcasing the exquisite artworks on display. Our team is not only passionate about art but also well-versed in the stories and techniques behind each piece, ensuring a personalized and engaging experience for both artists and art enthusiasts.",
-          "ja": "芸術が息づく活気ある地域にひっそりと佇む当ギャラリースペースは、スタイリッシュなヘアサロンと一体化した独特の空間で、美と創造性が見事に融合しています。一歩足を踏み入れると、訪問者を暖かく迎え、展示されている卓越した作品を紹介するために尽力する、親しみやすく知識豊富なスタッフに出会います。私たちのチームは、芸術への深い愛情を持つだけでなく、各作品の背後にある物語や技法についても詳しく、アーティストもアート愛好家も一人ひとりに対して、引き込まれるような個別の体験を提供します。"
+          "ja": "芸術とビジネスが息づく活気ある地区にある当ギャラリーは、スタイリッシュなヘアサロンと一体化した独特の空間で、美と創造性が融合しています。一歩足を踏み入れると、訪問者を暖かく迎え、展示されている卓越した作品を紹介するために尽力する、親しみやすく知識豊富なスタッフに出会います。ギャラリースタッフは、芸術への深い愛情を持つだけでなく、各作品の背後にある物語や技法についても詳しく、アーティストもアート愛好家も一人ひとりに対して、引き込まれるような場を提供します。"
         },
         "prices-heading": {
           "en": "well thoughtout plans ",
@@ -155,7 +163,7 @@ function getTranslation(){
         },
         "map-description": {
           "en": "Embrace the energy of 60th street Manhattan, where creativity flourishes and artistic passions thrive. Our inviting gallery space, with its strategic location and exceptional visibility, offers a remarkable opportunity to showcase your talent and captivate the hearts and minds of all who step through the door.",
-          "ja": "創造性が溢れ、芸術への情熱が活き活きと躍動するマンハッタンの60丁目のエネルギーを感じてみてください。戦略的な立地と見通しの良さを誇る私たちの温かいギャラリースペースは、あなたの才能を発揮し、訪れる全ての人々の心を捉える素晴らしいチャンスを提供します。"
+          "ja": "創造性が溢れ、芸術への情熱が活き活きと躍動するマンハッタンの60丁目のエネルギーを感じてみてください。"
         },
         "contact-heading": {
           "en": "get in touch with <span class=\"defaultcolor\">us </span>",
@@ -164,6 +172,78 @@ function getTranslation(){
         "contact-message": {
           "en": "Any questions? Feel free to contact us or visit our gallery",
           "ja": "質問もしくはギャラリーに直接お越しください"
+        },
+        "photo-title": {
+            "en": "Gallery Photos",
+            "ja": "ギャラリーフォト"
+        },
+        "photo-sub-title": {
+            "en": "Exhibition Spaces",
+            "ja": "展示スペース"
+        },
+        "photo-1-title": {
+            "en": "Section A",
+            "ja": "セクションA"
+        },
+        "photo-1-desc": {
+            "en": "Entrance Area",
+            "ja": "入り口付近のエリア"
+        },
+        "photo-2-title": {
+            "en": "Section B",
+            "ja": "セクションB"
+        },
+        "photo-2-desc": {
+            "en": "Street Facing Room Panorama Photo",
+            "ja": "通り沿い（パノラマ）"
+        },
+        "photo-4-title": {
+            "en": "Section A",
+            "ja": "セクションA"
+        },
+        "photo-4-desc": {
+            "en": "Panorama",
+            "ja": "パノラマ写真"
+        },
+        "photo-6-title": {
+            "en": "Section B",
+            "ja": "セクションB"
+        },
+        "photo-6-desc": {
+            "en": "Right Side",
+            "ja": "右側"
+        },
+        "photo-7-title": {
+            "en": "Section B",
+            "ja": "セクションB"
+        },
+        "photo-7-desc": {
+            "en": "Main Area with Counter",
+            "ja": "メインのエリアとカウンター"
+        },
+        "photo-8-title": {
+            "en": "Section A",
+            "ja": "セクションA"
+        },
+        "photo-8-desc": {
+            "en": "Left Side with Storage",
+            "ja": "左側とストレージ"
+        },
+        "photo-9-title": {
+            "en": "Section B",
+            "ja": "セクションB"
+        },
+        "photo-9-desc": {
+            "en": "Left Side",
+            "ja": "左側"
+        },
+        "photo-10-title": {
+            "en": "Section A",
+            "ja": "セクションA"
+        },
+        "photo-10-desc": {
+            "en": "Reception Desk",
+            "ja": "受付デスクと入り口正面"
         }
       };
 }
