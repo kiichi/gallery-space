@@ -118,8 +118,8 @@ function getTranslation(){
           "ja": "\n                            <i class=\"fa fa-dollar\"></i>\n                            <h1>1200</h1> <span class=\"dur\">/ 3日間</span>\n                        "
         },
         "prices-1-list": {
-          "en": "\n                        <li><span>Friday, Saturday, and Sunday</span></li>\n                        <li><span>Instagram / Youtube Live Support</span></li>\n                        <li><span>Email and SNS Marketing</span></li>\n                    ",
-          "ja": "\n                        <li><span>金曜日、土曜日、日曜日</span></li>\n                        <li><span>Instagram / Youtube ライブサポート</span></li>\n                        <li><span>EmailとSNSマーケティング</span></li>\n                    "
+          "en": "\n<li><span>Opening Reception Support</span></li>                        <li><span>Friday, Saturday, and Sunday</span></li>\n                        <li><span>Instagram / Youtube Live Support</span></li>\n                        <li><span>Email and SNS Marketing</span></li>\n                    ",
+          "ja": "\n<li><span>オープニング・レセプションのサポート</span></li>                        <li><span>金曜日、土曜日、日曜日</span></li>\n                        <li><span>Instagram / Youtube ライブサポート</span></li>\n                        <li><span>EmailとSNSマーケティング</span></li>\n                    "
         },
         "prices-1-contact": {
           "en": "Contact Us",
@@ -134,8 +134,8 @@ function getTranslation(){
           "ja": "\n                            <i class=\"fa fa-dollar\"></i>\n                            <h1>1500</h1> <span class=\"dur\">/ 週</span>\n                        "
         },
         "prices-2-list": {
-          "en": "\n                        <li><span>Onsite Workshop or Event Opportunity</span></li>\n                        <li><span>Instagram / Youtube Live Support</span></li>\n                        <li><span>Online Shop Listing</span></li>\n                        <li><span>Email and SNS Marketing</span></li>\n                    ",
-          "ja": "\n                        <li><span>現地でのワークショップまたはイベント</span></li>\n                        <li><span>Instagram / Youtube ライブサポート</span></li>\n                        <li><span>オンラインショップリスティング</span></li>\n                        <li><span>EmailとSNSマーケティング</span></li>\n                    "
+          "en": "\n<li><span>Opening Reception Support</span></li>                        <li><span>Onsite Workshop or Event Opportunity</span></li>\n                        <li><span>Instagram / Youtube Live Support</span></li>\n                        <li><span>Online Shop Listing</span></li>\n                        <li><span>Email and SNS Marketing</span></li>\n                    ",
+          "ja": "\n<li><span>オープニング・レセプションのサポート</span></li>                        <li><span>現地でのワークショップまたはイベント</span></li>\n                        <li><span>Instagram / Youtube ライブサポート</span></li>\n                        <li><span>オンラインショップリスティング</span></li>\n                        <li><span>EmailとSNSマーケティング</span></li>\n                    "
         },
         "prices-2-contact": {
           "en": "Contact Us",
@@ -150,8 +150,8 @@ function getTranslation(){
           "ja": "\n                            <i class=\"fa fa-dollar\"></i>\n                            <h1>4500</h1> <span class=\"dur\">/ 月</span>\n                        "
         },
         "prices-3-list": {
-          "en": "\n                        <li><span>Extra Storage Room</span></li>\n                        <li><span>Onsite Workshop or Event Opportunity</span></li>\n                        <li><span>Instagram / Youtube Live Support</span></li>\n                        <li><span>Online Shop Listing</span></li>\n                        <li><span>Email and SNS Marketing</span></li>\n                    ",
-          "ja": "\n                        <li><span>追加のストレージルーム</span></li>\n                        <li><span>現地でのワークショップまたはイベント</span></li>\n                        <li><span>Instagram / Youtube ライブサポート</span></li>\n                        <li><span>オンラインショップリスティング</span></li>\n                        <li><span>EmailとSNSマーケティング</span></li>\n                    "
+          "en": "\n<li><span>Opening Reception Support</span></li>                        <li><span>Extra Storage Room</span></li>\n                        <li><span>Onsite Workshop or Event Opportunity</span></li>\n                        <li><span>Instagram / Youtube Live Support</span></li>\n                        <li><span>Online Shop Listing</span></li>\n                        <li><span>Email and SNS Marketing</span></li>\n                    ",
+          "ja": "\n<li><span>オープニング・レセプションのサポート</span></li>                        <li><span>追加のストレージルーム</span></li>\n                        <li><span>現地でのワークショップまたはイベント</span></li>\n                        <li><span>Instagram / Youtube ライブサポート</span></li>\n                        <li><span>オンラインショップリスティング</span></li>\n                        <li><span>EmailとSNSマーケティング</span></li>\n                    "
         },
         "prices-3-contact": {
           "en": "Contact Us",
