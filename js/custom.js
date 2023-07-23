@@ -103,7 +103,7 @@ function getTranslation(){
         },
         "prices-title": {
           "en": "Fit your exhbition schedule",
-          "ja": "様々な展示期間に細かく対応"
+          "ja": "様々な展示に対応"
         },
         "prices-details": {
           "en": "Please contact us for more details",
@@ -111,15 +111,15 @@ function getTranslation(){
         },
         "prices-1-title": {
           "en": "Weekend Pop-Up",
-          "ja": "週末プラン"
+          "ja": "ショップまたはワークショップなどのイベントスペースとして"
         },
         "prices-1-price": {
           "en": "\n                            <i class=\"fa fa-dollar\"></i>\n                            <h1>1200</h1> <span class=\"dur\">/ 3 days</span>\n                        ",
-          "ja": "\n                            <i class=\"fa fa-dollar\"></i>\n                            <h1>1200</h1> <span class=\"dur\">/ 3日間</span>\n                        "
+          "ja": "\n                           \n                            <h1></h1></span>\n                        "
         },
         "prices-1-list": {
           "en": "\n<li><span>Opening Reception Support</span></li>                        <li><span>Friday, Saturday, and Sunday</span></li>\n                        <li><span>Instagram / Youtube Live Support</span></li>\n                        <li><span>Email and SNS Marketing</span></li>\n                    ",
-          "ja": "\n<li><span>オープニング・レセプションのサポート</span></li>                        <li><span>金曜日、土曜日、日曜日</span></li>\n                        <li><span>Instagram / Youtube ライブサポート</span></li>\n                        <li><span>EmailとSNSマーケティング</span></li>\n                    "
+          "ja": "\n<li><span>ギャラリーに併設されたショップセクション</span></li>                        <li><span>オンラインショップ</span></li>　\n　<li><span>ワークショップもしくはイベントスペースとして</span></li>                        <li><span>Instagram / Youtube ライブサポート</span></li>\n                        <li><span>EmailとSNSマーケティング</span></li>\n                    "
         },
         "prices-1-contact": {
           "en": "Contact Us",
