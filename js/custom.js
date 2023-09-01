@@ -159,7 +159,7 @@ function getTranslation(){
         },
         "map-address": {
           "en": "\n                     <h2 class=\"darkcolor top25 bottom35\"><span class=\"defaultcolor\">Gallery 60 NYC</span></h2>\n                     <p>Address: 208 E 60th St, New York, NY 10022</p>\n                     <p>Phone: +1 212 752 9229</p>\n                     <p>Email: <a href=\"mailto:gallery60nyc@gmail.com\">gallery60nyc@gmail.com</a></p>\n                     <p>Open 7 days:10am-5pm</p>\n                ",
-          "ja": "\n                     <h2 class=\"darkcolor top25 bottom35\"><span class=\"defaultcolor\">MK60　 Gallery</span></h2>\n                     <p>住所: 208 E 60th St, New York, NY 10022</p>\n                     <p>電話: +1 212 752 9229</p>\n                     <p>Email: <a href=\"mailto:gallery60nyc@gmail.com\">gallery60nyc@gmail.com</a></p>\n                     <p>営業日: 週7日、10時-17時</p>\n                "
+          "ja": "\n                     <h2 class=\"darkcolor top25 bottom35\"><span class=\"defaultcolor\">Gallery 60　 NYC</span></h2>\n                     <p>住所: 208 E 60th St, New York, NY 10022</p>\n                     <p>電話: +1 212 752 9229</p>\n                     <p>Email: <a href=\"mailto:gallery60nyc@gmail.com\">gallery60nyc@gmail.com</a></p>\n                     <p>営業日: 週7日、10時-17時</p>\n                "
         },
         "map-description": {
           "en": "Embrace the energy of 60th street Manhattan, where creativity flourishes and artistic passions thrive. Our inviting gallery space, with its strategic location and exceptional visibility, offers a remarkable opportunity to showcase your talent and captivate the hearts and minds of all who step through the door.",
